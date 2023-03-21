@@ -13,11 +13,19 @@ In this project, we reproduce the results of a meta-analysis of gene expression 
 
 ### Preprocessing of the gene expression data
 
-From the data avaliable on the [github repository](https://github.com/maglab/AgeingSignatures2020_supplementary) we selected 20 mice microarray datasets originated from brain, heart and muscle. (12 (14) samples from brain, 5 from heart and 8 (12) from muscle) Each dataset contains expression levels of around 20000 genes from several samples.
+From the data avaliable on the [github repository](https://github.com/maglab/AgeingSignatures2020_supplementary) we selected 29 mice microarray datasets from brain, heart and muscle. Fourteen datasets from brain, five from heart and 10 from muscles, Each dataset contains expression levels of approximately 20000 genes from several samples where the ages of samples are provided in months.
 
 #### Quality control
 
-To explore a similarity of the samples we applied the Principal Component Analysis (PCA) method of data clustering. The samples belonging to different ages are intermingled, so we need not remove them
+To explore a similarity of the samples we applied the Principal Component Analysis (PCA) method of data clustering. The samples belonging to different ages are intermingled, so we need not remove them. 
+
+#### Linear regression analysis
+
+To identify genes that are differentially expressed in different samples of each dataset, we performed linear regression. The co-effecient of linear regression was calculated for each gene in a each dataset. The linear regression coeffeceints and standard errors for all the genes across the datasets were combined into single dataframe to see if a gene that is significantly, differentially expressed across different samples in one dataset is also expressed in all other datasets. Further, only those genes were pritoritzed for analysis that were common in atleast 3 datasets. 
+
+#### Binomial testing
+
+Palmer, Daniel et al. in 2021  [palmer2021ageing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2) performed Bionomial test to identify significantly, differentially expressed. We carried oiut Binomial test to compare with meta regression analysis that we carried out with PyMare packege.
 
 #### Statistical testing
 
