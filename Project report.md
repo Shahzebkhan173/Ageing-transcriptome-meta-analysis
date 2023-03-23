@@ -118,7 +118,22 @@ While for underexpressed:
 
 Intersection of the obtained list of differentially expressed genes across aging with GenAge database. 
 
-...
+To identify genes that downregulated or upregulated in all three tissues (Brain, Heart and Muscle), intersection analysis was carried out. Five genes were upregulated whereas four genes were downregulated in all three tissues. 
+
+
+
+## Upregulated genes in Brain, Heart and Muscle tissues: 
+  **ACER2**: may lead to changes in the metabolism of ceramide and other lipid molecules
+  **RHPN2**: may affect cell adhesion, migration, and signaling, which could impact various physiological and pathological processes
+  **CD2AP**: may disrupt the structure and function of the glomerular filtration barrier in the kidney, leading to proteinuria, inflammation, and progressive kidney damage.
+  **RRAGC**: may affect the activity of the mTORC1 signaling pathway, which plays a key role in regulating cell growth, autophagy, and metabolism
+  **SKAP2**: Differential expression of SKAP2 may influence T-cell activation and migration, which are essential for immune surveillance and defense against infections and cancer
+
+## Downregulated genes in Brain, Heart and Muscle tissues: 
+  **CRB3**: encodes a protein that is important for maintaining the structure and function of epithelial cells
+  **HOXD12**: member of the homeobox gene family that is involved in regulating embryonic development and differentiation
+  **UBN1**: involved in chromatin remodeling, which is important for regulating gene expression. 
+  **SLC6A3**: encodes a dopamine transporter protein that is involved in the regulation of dopamine signaling in the brain
 
 ## Discussion
 
@@ -148,12 +163,9 @@ We further conducted enrichment analyses for genes differentially expressed in e
 
 
 ## Credits
+This project was completed by Andrey Stapran, Shahzeb Khan and Daria Kozhevnikova as requirnment for Computational Biology of Agining course taught by Ekaterina Khrameeva.
 
-GO enrichment analysis and this repository prepared by Daria Kozhevnikova
-
-The Jupiter Notebook for the data meta-analysis prepared by Andrey Stapran
-
-The search in GenAge and description of found matches prepared by ShahZeb Khan
+The Jupyter Notebook for the data meta-analysis prepared by Andrey Stapran, GO enrichment analysis and GenAge intersection analysis was carried out by Daria Kozhevnikova and ShahZeb Khan, respectively.
 
 ## References
 
